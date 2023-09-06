@@ -18,6 +18,7 @@ function WebDesign() {
 and bring memorable brand experiences."
         />
         <section className="web-projects-section">
+          <h2 className="visually-hidden">Our Projects</h2>
           <div className="web-projects-section__content">
             <ul className="web-projects-section__list" role="list">
               {webProjectsData.webProjects.map((webProject) => (
