@@ -149,7 +149,6 @@ body {
   position: relative;
   z-index: 99;
   padding: 2.19rem 1.5rem 2.13rem 1.5rem;
-  margin-bottom: 6rem;
   background: var(--primary-clr-three);
 }
 .header__content {
@@ -257,6 +256,39 @@ body {
     position: absolute;
     background-color: transparent;
   }
+}
+.btn {
+  min-width: 10ch;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-clr-two);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-500);
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+  padding: 18px 24px 16px 25px;
+  background: var(--primary-clr-three);
+}
+
+.intro-section {
+  position: relative;
+  text-align: center;
+  padding: 60px 24px 457px 24px;
+  overflow: hidden;
+  background: var(--primary-clr-one);
+}
+.intro-section__content {
+  display: grid;
+  gap: 14px;
+}
+.intro-section:after {
+  position: absolute;
+  content: url(/public/assets/home/desktop/image-hero-phone.png);
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=main.css.map */

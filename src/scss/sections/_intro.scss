@@ -1,0 +1,27 @@
+.intro-section {
+  position: relative;
+  text-align: center;
+
+  padding: 60px 24px 457px 24px;
+  overflow: hidden;
+  background: var(--primary-clr-one);
+  &__content {
+    display: grid;
+    gap: 14px;
+  }
+
+  &__heading {
+  }
+
+  &__text {
+  }
+
+  &:after {
+    position: absolute;
+    content: url(/public/assets/home/desktop/image-hero-phone.png);
+
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
