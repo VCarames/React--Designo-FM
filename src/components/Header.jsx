@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__content">
-        <Link to="/" aria-label="Designo - Home">
+        <Link className="header__logo" to="/" aria-label="Designo - Home">
           <img src={Logo} alt="" />
         </Link>
 
