@@ -1,5 +1,12 @@
+import Header from "../components/Header";
+
 function Locations() {
-  return <div>Locations Page</div>;
+  return (
+    <div>
+      <Header />
+      Locations Page
+    </div>
+  );
 }
 
 export default Locations;

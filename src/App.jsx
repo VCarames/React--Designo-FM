@@ -5,7 +5,7 @@ import AppDesign from "./pages/AppDesign";
 import GraphicDesign from "./pages/GraphicDesign";
 import About from "./pages/About";
 import Locations from "./pages/Locations";
-import ContactUs from "./pages/ContactUs";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path="graphicdesign" element={<GraphicDesign />} />
         <Route path="about" element={<About />} />
         <Route path="locations" element={<Locations />} />
-        <Route path="contactus" element={<ContactUs />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -1,12 +1,12 @@
 import Header from "../components/Header";
 
-function AppDesign() {
+function Contact() {
   return (
     <div>
       <Header />
-      App Design Page
+      Contact Us Page
     </div>
   );
 }
 
-export default AppDesign;
+export default Contact;
