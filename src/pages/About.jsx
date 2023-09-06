@@ -1,11 +1,15 @@
 import Header from "../components/Header";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/Footer/Footer";
+import CTA from "../components/CTA";
 
 function About() {
   return (
     <div>
       <Header />
       About Page
+      <main>
+        <CTA />
+      </main>
       <Footer />
     </div>
   );

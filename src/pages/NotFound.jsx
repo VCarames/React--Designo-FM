@@ -1,14 +1,18 @@
-import Header from "../components/Header"
-import Footer from "../components/footer/Footer"
+import Header from "../components/Header";
+import Footer from "../components/Footer/Footer";
+import CTA from "../components/CTA";
 
 function NotFound() {
   return (
     <div>
       <Header />
       Not Found Page
+      <main>
+        <CTA />
+      </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;
