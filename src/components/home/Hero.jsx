@@ -3,20 +3,20 @@ import HeroImg from "/public/assets/home/desktop/image-hero-phone.png";
 
 function Intro() {
   return (
-    <section className="intro-section">
-      <div className="intro-section__content">
-        <div className="intro-section__container">
-          <h1 className="intro-section__heading intro__heading">
+    <section className="hero-section">
+      <div className="hero-section__content">
+        <div className="hero-section__container">
+          <h1 className="hero-section__heading primary-heading">
             Award-winning custom designs and digital branding solutions
           </h1>
-          <p className="intro-section__text intro__text">
+          <p className="hero-section__text primary-text">
             With over 10 years in the industry, we are experienced in creating
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <Link className="intro-section__btn btn">Learn More</Link>
+          <Link className="hero-section__btn btn">Learn More</Link>
         </div>
-        <img className="intro-section__img" src={HeroImg} alt="" />
+        <img className="hero-section__img" src={HeroImg} alt="" />
       </div>
     </section>
   );

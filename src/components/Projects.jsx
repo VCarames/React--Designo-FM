@@ -7,7 +7,7 @@ function Projects() {
 
       <ul className="projects-section__list" role="list">
         <li className="projects-section__item item--web" role="listitem">
-          <h3 className="projects-section__subheading subheading--28">
+          <h3 className="projects-section__subheading secondary-heading">
             Web Design
           </h3>
           <Link className="projects-section__link link" to="webdesign">
@@ -19,7 +19,7 @@ function Projects() {
           </Link>
         </li>
         <li className="projects-section__item item--app" role="listitem">
-          <h3 className="projects-section__subheading subheading--28">
+          <h3 className="projects-section__subheading secondary-heading">
             App Design
           </h3>
           <Link className="projects-section__link link" to="appdesign">
@@ -31,7 +31,7 @@ function Projects() {
           </Link>
         </li>
         <li className="projects-section__item item--graphic" role="listitem">
-          <h3 className="projects-section__subheading subheading--28">
+          <h3 className="projects-section__subheading secondary-heading">
             Graphic Design
           </h3>
           <Link className="projects-section__link link" to="graphicdesign">

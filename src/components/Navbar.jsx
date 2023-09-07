@@ -62,17 +62,17 @@ function Navbar() {
         onBlur={handleFocusOut}
       >
         <li className="nav__menu-item" role="listitem">
-          <Link to="/about" className="nav__menu-link">
+          <Link to="/about" className="nav__menu-link primary-link ">
             Our Company
           </Link>
         </li>
         <li className="nav__menu-item" role="listitem">
-          <Link to="/locations" className="nav__menu-link">
+          <Link to="/locations" className="nav__menu-link primary-link ">
             Locations
           </Link>
         </li>
         <li className="nav__menu-item" role="listitem">
-          <Link to="/contact" className="nav__menu-link">
+          <Link to="/contact" className="nav__menu-link primary-link ">
             Contact
           </Link>
         </li>

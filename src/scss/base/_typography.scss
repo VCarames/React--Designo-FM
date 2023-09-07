@@ -1,8 +1,8 @@
 body {
-  font-family: var(--ff);
+  font-family: var(--ff-primary);
 }
 
-.nav__menu-link {
+.primary-link {
   color: var(--primary-clr-three);
   font-size: var(--fs-24);
   font-weight: var(--fw-400);
@@ -11,21 +11,39 @@ body {
   text-transform: uppercase;
 }
 
-.intro__heading {
+.secondary-link {
+  color: var(--primary-clr-three);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-400);
+  line-height: 1;
+  letter-spacing: 0.13rem;
+  text-transform: uppercase;
+}
+
+.primary-heading {
   color: var(--primary-clr-three);
   font-size: var(--fs-32);
   font-weight: var(--fw-500);
   line-height: 1.12;
 }
 
-.intro__text {
+.seconday-heading {
   color: var(--primary-clr-three);
-  font-size: var(--fs-15);
-  font-weight: var(--fw-400);
-  line-height: 1.66;
+  font-size: var(--fs-28);
+  font-weight: var(--fw-500);
+  line-height: 1.28;
+  letter-spacing: 0.09rem;
 }
 
-.subheading--20 {
+.secondary-heading {
+  color: var(--primary-clr-three);
+  font-size: var(--fs-28);
+  font-weight: var(--fw-500);
+  line-height: 1.28;
+  letter-spacing: 0.09rem;
+}
+
+.tertiary-heading {
   color: var(--secondary-clr-two);
   font-size: var(--fs-20);
   font-weight: var(--fw-500);
@@ -34,41 +52,50 @@ body {
   text-transform: uppercase;
 }
 
-.subheading--28 {
+.primary-text {
   color: var(--primary-clr-three);
-  text-align: center;
-  font-size: var(--fs-28);
-  font-weight: 500;
-  line-height: 1.28;
-  letter-spacing: 0.09rem;
-  text-transform: uppercase;
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  line-height: 1.66;
+}
+
+.secondary-text {
+  color: var(--secondary-clr-two);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  line-height: 1.62;
+}
+
+.tertiary-text {
+  color: var(--primary-clr-three);
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1.62;
+  opacity: 0.5;
 }
 
 @media (min-width: 600px) {
-  .nav__menu-link {
+  .primary-link {
     color: var(--secondary-clr-two);
     font-size: var(--fs-14);
     font-weight: var(--fw-400);
     line-height: 1;
   }
 
-  .intro__heading {
+  .primary-heading {
     font-size: var(--fs-48);
     line-height: 1;
   }
 
-  .intro__text {
-    font-size: var(--fs-16);
-    line-height: 1.62;
-  }
-
-  .subheading--28 {
-    color: var(--primary-clr-three);
-    text-align: center;
+  .secondary-heading {
     font-size: var(--fs-40);
-    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.13rem;
-    text-transform: uppercase;
+  }
+
+  .primary-text {
+    font-size: var(--fs-16);
+    line-height: 1.62;
   }
 }

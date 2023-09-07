@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Intro from "../components/home/Intro";
+import Hero from "../components/home/Hero";
 import Projects from "../components/Projects";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer/Footer";
@@ -10,7 +10,7 @@ function Home() {
     <>
       <Header />
       <main>
-        <Intro />
+        <Hero />
         <Projects />
         <Benefits />
         <CTA />
