@@ -1,27 +1,116 @@
 .intro-section {
-  position: relative;
   text-align: center;
 
-  padding: 60px 24px 457px 24px;
   overflow: hidden;
-  background: var(--primary-clr-one);
+
   &__content {
+    max-width: var(--mw-1100);
     display: grid;
-    gap: 14px;
+    justify-items: center;
+    position: relative;
+
+    grid-template-rows: repeat(2, 1fr);
+
+    background: var(--primary-clr-one);
+
+    padding: 81px 24px 124px 24px;
+
+    transition: 0.8s all;
+
+    background-image: url(/public/assets/home/desktop/bg-pattern-hero-home.svg);
+    background-repeat: no-repeat;
+    background-position: -1px 103px;
   }
 
   &__heading {
+    margin-bottom: 24px;
   }
 
   &__text {
+    margin-bottom: 24px;
   }
 
-  &:after {
+  &__img {
+    max-width: 624px;
     position: absolute;
-    content: url(/public/assets/home/desktop/image-hero-phone.png);
+    bottom: -372px;
+  }
+}
 
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
+@media (min-width: 450px) {
+  .intro-section__content {
+    padding: 61px 24px 156px 24px;
+  }
+}
+
+@media (min-width: 600px) {
+  .intro-section {
+    &__content {
+      border-radius: 20px;
+      overflow: hidden;
+
+      justify-items: center;
+
+      padding: 61px 58px 132px 58px;
+      margin: 34px 40px;
+
+      background-position: 169px 101px;
+    }
+
+    &__container {
+      display: grid;
+      justify-items: center;
+    }
+
+    &__heading {
+      margin-bottom: 29px;
+    }
+
+    &__text {
+      max-width: 46ch;
+
+      margin-bottom: 18px;
+    }
+
+    &__img {
+      bottom: -355px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro-section {
+    margin-top: 33px;
+    &__content {
+      grid-template-columns: 1fr 388px;
+      grid-template-rows: 1fr;
+      align-items: center;
+
+      padding: 147px 58px 144px 90px;
+      margin: 0 auto;
+
+      background-position: 466px 0;
+    }
+
+    &__container {
+      text-align: start;
+      display: grid;
+      align-items: start;
+      justify-items: start;
+      text-align: start;
+    }
+
+    &__heading {
+      margin-bottom: 31px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      right: -80px;
+      bottom: -241px;
+    }
   }
 }

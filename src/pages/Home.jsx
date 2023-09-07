@@ -7,7 +7,7 @@ import Benefits from "../components/home/Benefits";
 
 function Home() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Intro />
@@ -16,7 +16,7 @@ function Home() {
         <CTA />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
