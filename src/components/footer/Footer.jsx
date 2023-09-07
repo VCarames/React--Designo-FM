@@ -8,13 +8,17 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__content">
-        <Link to="/" className="footer__logo" aria-label="Designo - Home">
-          <img src={Logo} alt="" />
-        </Link>
+        <div className="footer__container--one">
+          <Link to="/" className="footer__logo" aria-label="Designo - Home">
+            <img src={Logo} alt="" />
+          </Link>
 
-        <FooterNav />
-        <FooterContact />
-        <FooterSocial />
+          <FooterNav />
+        </div>
+        <div className="footer__container--two">
+          <FooterContact />
+          <FooterSocial />
+        </div>
       </div>
     </footer>
   );
