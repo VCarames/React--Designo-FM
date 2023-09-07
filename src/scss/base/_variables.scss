@@ -6,7 +6,9 @@
   --fs-16: 1rem;
   --fs-20: 1.25rem;
   --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
   --fs-32: 2rem;
+  --fs-40: 2.5rem;
   --fs-48: 3rem;
 
   --fw-400: 400;
@@ -23,4 +25,6 @@
   --secondary-clr-three: hsl(210, 17%, 95%);
 
   --overlay: hsla(0, 0%, 0%, 0.4);
+
+  --transition: 0.8s al;
 }

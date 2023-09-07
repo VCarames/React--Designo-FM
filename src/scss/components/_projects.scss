@@ -1,0 +1,129 @@
+.projects-section {
+  max-width: var(--mw-1100);
+  margin: 7.44rem 1.5rem 0 1.5rem;
+
+  & > {
+    transition: var(--transition);
+  }
+}
+
+.projects-section__list {
+  display: grid;
+  grid-template-areas: "web" "app" "graphic";
+  gap: 1.5rem;
+}
+
+.projects-section__item {
+  text-align: center;
+
+  display: grid;
+  place-content: center;
+  gap: 0.69rem;
+
+  border-radius: 0.94rem;
+}
+
+.projects-section__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item--web {
+  grid-area: web;
+  background-image: url(/public/assets/home/mobile/image-web-design.jpg);
+
+  padding: 5.69rem 1.25rem 5.63rem 1.25rem;
+}
+
+.item--app {
+  grid-area: app;
+  background-image: url(/public/assets/home/mobile/image-app-design.jpg);
+
+  padding: 5.69rem 1.25rem 5.56rem 1.25rem;
+}
+
+.item--graphic {
+  grid-area: graphic;
+  background-image: url(/public/assets/home/mobile/image-graphic-design.jpg);
+
+  padding: 5.69rem 1.25rem 5.63rem 20px;
+}
+
+@media (min-width: 37.5rem) {
+  .projects-section {
+    margin: 5.31rem 2.5rem 0 2.44rem;
+  }
+
+  .projects-section__list {
+    gap: 1.5rem;
+  }
+
+  .projects-section__item {
+    text-align: center;
+
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+
+    border-radius: 0.94rem;
+  }
+
+  .item--web {
+    background-image: url(/public/assets/home/tablet/image-web-design.jpg);
+
+    padding: 3.31rem 1.25rem 3.31rem 20px;
+  }
+
+  .item--app {
+    background-image: url(/public/assets/home/tablet/image-app-design.jpg);
+
+    padding: 3.38rem 1.25rem 3.25rem 1.25rem;
+  }
+
+  .item--graphic {
+    background-image: url(/public/assets/home/tablet/image-graphic-design.jpg);
+
+    padding: 3.31rem 1.25rem 3.31rem 1.25rem;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .projects-section {
+    margin: 9.63rem auto 0 auto;
+  }
+
+  .projects-section__list {
+    grid-template-areas: "web app" "web graphic";
+
+    gap: 1.88rem;
+  }
+
+  .projects-section__item {
+    text-align: center;
+
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+
+    border-radius: 0.94rem;
+  }
+
+  .item--web {
+    background-image: url(/public/assets/home/desktop/image-web-design.jpg);
+
+    padding: 2.81rem 4.13rem 3.31rem 3.81rem;
+  }
+
+  .item--app {
+    background-image: url(/public/assets/home/desktop/image-app-design.jpg);
+
+    padding: 6.75rem 1.25rem 6.56rem 1.25rem;
+  }
+
+  .item--graphic {
+    background-image: url(/public/assets/home/desktop/image-graphic-design.jpg);
+
+    padding: 6.75rem 1.25rem 6.5rem 1.25rem;
+  }
+}

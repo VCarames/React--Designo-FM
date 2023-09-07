@@ -6,22 +6,39 @@ function Projects() {
       <h2 className="visually-hidden">Our Previous Projects</h2>
 
       <ul className="projects-section__list" role="list">
-        <li className="projects-section__item" role="listitem">
-          <h3 className="projects-section__subheading">Web Design</h3>
-          <Link className="projects-section__link" to="webdesign">
-            View Projects
+        <li className="projects-section__item item--web" role="listitem">
+          <h3 className="projects-section__subheading subheading--28">
+            Web Design
+          </h3>
+          <Link className="projects-section__link link" to="webdesign">
+            <span>View Projects</span>
+
+            <span>
+              <img src="/public/assets/icon-right-arrow.svg" alt="" />
+            </span>
           </Link>
         </li>
-        <li className="projects-section__item" role="listitem">
-          <h3 className="projects-section__subheading">App Design</h3>
-          <Link className="projects-section__link" to="appdesign">
-            View Projects
+        <li className="projects-section__item item--app" role="listitem">
+          <h3 className="projects-section__subheading subheading--28">
+            App Design
+          </h3>
+          <Link className="projects-section__link link" to="appdesign">
+            <span>View Projects</span>
+
+            <span>
+              <img src="/public/assets/icon-right-arrow.svg" alt="" />
+            </span>
           </Link>
         </li>
-        <li className="projects-section__item" role="listitem">
-          <h3 className="projects-section__subheading">Graphic Design</h3>
-          <Link className="projects-section__link" to="graphicdesign">
-            View Projects
+        <li className="projects-section__item item--graphic" role="listitem">
+          <h3 className="projects-section__subheading subheading--28">
+            Graphic Design
+          </h3>
+          <Link className="projects-section__link link" to="graphicdesign">
+            <span>View Projects</span>
+            <span>
+              <img src="/public/assets/icon-right-arrow.svg" alt="" />
+            </span>
           </Link>
         </li>
       </ul>
