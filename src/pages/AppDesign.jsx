@@ -1,9 +1,11 @@
 import Header from "../components/Header";
-import Projects from "../components/Projects";
+
 import CTA from "../components/CTA";
 import Footer from "../components/Footer/Footer";
 import Intro from "../components/Intro";
-import appProjectsData from "/public/data/appProjects";
+
+import AppProjects from "../components/appDesign/AppProjects";
+import ProjectLinks from "../components/ProjectLinks";
 
 function AppDesign() {
   return (
@@ -16,33 +18,8 @@ function AppDesign() {
         to your customers right at their fingertips."
         />
 
-        <section className="app-projects-section">
-          <h2 className="visually-hidden">Our Projects</h2>
-          <div className="app-projects-section__content">
-            <ul className="app-projects-section__list" role="list">
-              {appProjectsData.appProjects.map((appProject) => (
-                <li
-                  className="app-projects-section__item"
-                  key={appProject.id}
-                  role="listitem"
-                >
-                  <img
-                    className="app-projects-section__image"
-                    src={appProject.image}
-                    alt=""
-                  />
-                  <h3 className="app-projects-section__subheading">
-                    {appProject.heading}
-                  </h3>
-                  <p className="app-projects-section__text">
-                    {appProject.text}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-        <Projects />
+        <AppProjects />
+        <ProjectLinks />
         <CTA />
       </main>
       <Footer />
