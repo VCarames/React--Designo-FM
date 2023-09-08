@@ -105,6 +105,7 @@ button {
   --secondary-clr-one: hsl(11, 100%, 80%);
   --secondary-clr-two: hsl(264, 5%, 20%);
   --secondary-clr-three: hsl(210, 17%, 95%);
+  --secondary-clr-four: hsl(12, 83%, 93%);
   --overlay: hsla(0, 0%, 0%, 0.4);
   --transition: 0.8s al;
 }
@@ -795,6 +796,91 @@ body {
     display: grid;
     justify-items: center;
     gap: 2rem;
+  }
+}
+.web-projects-section {
+  margin: 86px 24px 0 24px;
+}
+
+.web-projects-section__content {
+  max-width: var(--mw-1100);
+  margin: 0 auto;
+}
+
+.web-projects-section__list {
+  display: grid;
+  gap: 40px;
+}
+
+.web-projects-section__item {
+  display: grid;
+  grid-template-rows: 320px 158px;
+  justify-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: var(--secondary-clr-four);
+  border-radius: 15px;
+}
+
+.web-projects-section__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.web-projects-section__container {
+  display: grid;
+  gap: 17px;
+  padding: 33px 32px 46px 32px;
+}
+
+.web-projects-section__subheading {
+  color: var(--primary-clr-one);
+}
+
+@media (min-width: 600px) {
+  .web-projects-section {
+    margin: 112px 40px 0 39px;
+  }
+  .web-projects-section__item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+  }
+  .web-projects-section__list {
+    gap: 30px;
+  }
+  .web-projects-section__container {
+    gap: 17px;
+    padding: 34px 46px 32px 46px;
+  }
+}
+@media (min-width: 800px) {
+  .web-projects-section__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .web-projects-section__item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+@media (min-width: 900px) {
+  .web-projects-section__content {
+    margin: 153px auto 0 auto;
+  }
+  .web-projects-section__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .web-projects-section__container {
+    padding: 38px 20px 29px 20px;
   }
 }
 
