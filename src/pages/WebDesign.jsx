@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import WebProjects from "../components/webDesign/WebProjects";
-import Projects from "../components/Projects";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer/Footer";
+import ProjectLinks from "../components/ProjectLinks";
 
 function WebDesign() {
   return (
@@ -17,7 +17,7 @@ function WebDesign() {
 and bring memorable brand experiences."
         />
         <WebProjects />
-        <Projects />
+        <ProjectLinks />
         <CTA />
       </main>
       <Footer />

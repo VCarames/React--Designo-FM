@@ -1,4 +1,4 @@
-.projects-section {
+.project-links-section {
   max-width: var(--mw-1100);
   margin: 7.44rem 1.5rem 0 1.5rem;
 
@@ -7,13 +7,13 @@
   }
 }
 
-.projects-section__list {
+.project-links-section__list {
   display: grid;
   grid-template-areas: "web" "app" "graphic";
   gap: 1.5rem;
 }
 
-.projects-section__item {
+.project-links-section__item {
   text-align: center;
 
   display: grid;
@@ -23,13 +23,13 @@
   border-radius: 0.94rem;
 }
 
-.projects-section__item {
+.project-links-section__item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.projects-section__subheading {
+.project-links-section__subheading {
   text-transform: uppercase;
 }
 
@@ -55,15 +55,15 @@
 }
 
 @media (min-width: 37.5rem) {
-  .projects-section {
+  .project-links-section {
     margin: 5.31rem 2.5rem 0 2.44rem;
   }
 
-  .projects-section__list {
+  .project-links-section__list {
     gap: 1.5rem;
   }
 
-  .projects-section__item {
+  .project-links-section__item {
     text-align: center;
 
     display: grid;
@@ -93,17 +93,17 @@
 }
 
 @media (min-width: 62.5rem) {
-  .projects-section {
+  .project-links-section {
     margin: 9.63rem auto 0 auto;
   }
 
-  .projects-section__list {
+  .project-links-section__list {
     grid-template-areas: "web app" "web graphic";
 
     gap: 1.88rem;
   }
 
-  .projects-section__item {
+  .project-links-section__item {
     text-align: center;
 
     display: grid;

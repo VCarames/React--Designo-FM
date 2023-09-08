@@ -9,11 +9,12 @@
 @use "components/navbar";
 @use "components/buttons";
 @use "components/links";
-@use "components/projects";
+@use "components/projectLinks";
+
 @use "components/footer";
 @use "components/cta";
 @use "components/intro";
 
 @use "sections/hero";
 @use "sections/benefits";
-@use "sections/webProjects";
+@use "sections/projects";

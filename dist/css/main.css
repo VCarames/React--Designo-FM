@@ -351,17 +351,17 @@ body {
   text-transform: uppercase;
 }
 
-.projects-section {
+.project-links-section {
   max-width: var(--mw-1100);
   margin: 7.44rem 1.5rem 0 1.5rem;
 }
-.projects-section__list {
+.project-links-section__list {
   display: grid;
   grid-template-areas: "web" "app" "graphic";
   gap: 1.5rem;
 }
 
-.projects-section__item {
+.project-links-section__item {
   text-align: center;
   display: grid;
   place-content: center;
@@ -369,13 +369,13 @@ body {
   border-radius: 0.94rem;
 }
 
-.projects-section__item {
+.project-links-section__item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.projects-section__subheading {
+.project-links-section__subheading {
   text-transform: uppercase;
 }
 
@@ -398,13 +398,13 @@ body {
 }
 
 @media (min-width: 37.5rem) {
-  .projects-section {
+  .project-links-section {
     margin: 5.31rem 2.5rem 0 2.44rem;
   }
-  .projects-section__list {
+  .project-links-section__list {
     gap: 1.5rem;
   }
-  .projects-section__item {
+  .project-links-section__item {
     text-align: center;
     display: grid;
     place-content: center;
@@ -425,14 +425,14 @@ body {
   }
 }
 @media (min-width: 62.5rem) {
-  .projects-section {
+  .project-links-section {
     margin: 9.63rem auto 0 auto;
   }
-  .projects-section__list {
+  .project-links-section__list {
     grid-template-areas: "web app" "web graphic";
     gap: 1.88rem;
   }
-  .projects-section__item {
+  .project-links-section__item {
     text-align: center;
     display: grid;
     place-content: center;
@@ -798,51 +798,45 @@ body {
     gap: 2rem;
   }
 }
-.web-projects-section {
-  margin: 86px 24px 0 24px;
+.projects-section {
+  margin: 5.38rem 1.5rem 0 1.5rem;
 }
-
-.web-projects-section__content {
+.projects-section__content {
   max-width: var(--mw-1100);
   margin: 0 auto;
 }
-
-.web-projects-section__list {
+.projects-section__list {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
 }
-
-.web-projects-section__item {
+.projects-section__item {
   display: grid;
-  grid-template-rows: 320px 158px;
+  grid-template-rows: 20rem 9.88rem;
   justify-items: center;
   text-align: center;
   overflow: hidden;
   background: var(--secondary-clr-four);
-  border-radius: 15px;
+  border-radius: 0.94rem;
 }
-
-.web-projects-section__image {
+.projects-section__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.web-projects-section__container {
+.projects-section__container {
   display: grid;
-  gap: 17px;
-  padding: 33px 32px 46px 32px;
+  gap: 1.06rem;
+  padding: 2.06rem 2rem 2.88rem 2rem;
 }
-
-.web-projects-section__subheading {
+.projects-section__subheading {
   color: var(--primary-clr-one);
 }
 
 @media (min-width: 600px) {
-  .web-projects-section {
-    margin: 112px 40px 0 39px;
+  .projects-section {
+    margin: 7rem 2.5rem 0 2.44rem;
   }
-  .web-projects-section__item {
+  .projects-section__item {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -850,21 +844,21 @@ body {
     align-items: center;
     text-align: center;
   }
-  .web-projects-section__list {
-    gap: 30px;
+  .projects-section__list {
+    gap: 1.88rem;
   }
-  .web-projects-section__container {
-    gap: 17px;
-    padding: 34px 46px 32px 46px;
+  .projects-section__container {
+    gap: 1.06rem;
+    padding: 2.13rem 2.88rem 2rem 2.88rem;
   }
 }
 @media (min-width: 800px) {
-  .web-projects-section__list {
+  .projects-section__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 2.5rem;
   }
-  .web-projects-section__item {
+  .projects-section__item {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
@@ -872,15 +866,15 @@ body {
   }
 }
 @media (min-width: 900px) {
-  .web-projects-section__content {
-    margin: 153px auto 0 auto;
+  .projects-section__content {
+    margin: 9.56rem auto 0 auto;
   }
-  .web-projects-section__list {
+  .projects-section__list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 2rem;
   }
-  .web-projects-section__container {
-    padding: 38px 20px 29px 20px;
+  .projects-section__container {
+    padding: 2.38rem 1.25rem 1.81rem 1.25rem;
   }
 }
 
