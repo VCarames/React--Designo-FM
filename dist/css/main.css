@@ -606,6 +606,31 @@ body {
     transform: translateY(-17px);
   }
 }
+.intro-section {
+  margin: 0 auto;
+}
+.intro-section__content {
+  max-width: var(--mw-1100);
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  text-align: center;
+  background: var(--primary-clr-one);
+  padding: 105px 30px 90px 30px;
+}
+
+@media (min-width: 600px) {
+  .intro-section__content {
+    display: grid;
+    justify-items: center;
+    gap: 24px;
+    text-align: center;
+    background: var(--primary-clr-one);
+    padding: 105px 30px 90px 30px;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+}
 .hero-section {
   text-align: center;
   overflow: hidden;

@@ -4,8 +4,8 @@ function Intro({ heading, text }) {
   return (
     <section className="intro-section">
       <div className="intro-section__content">
-        <h1>{heading}</h1>
-        <p>{text}</p>
+        <h1 className="intro-heading primary-heading">{heading}</h1>
+        <p className="intro-text primary-text ">{text}</p>
       </div>
     </section>
   );

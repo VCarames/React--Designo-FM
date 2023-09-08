@@ -1,0 +1,36 @@
+.intro-section {
+  margin: 0 auto;
+  &__content {
+    max-width: var(--mw-1100);
+
+    display: grid;
+    justify-items: center;
+    gap: 24px;
+
+    text-align: center;
+
+    background: var(--primary-clr-one);
+
+    padding: 105px 30px 90px 30px;
+  }
+}
+
+@media (min-width: 600px) {
+  .intro-section {
+    &__content {
+      display: grid;
+      justify-items: center;
+      gap: 24px;
+
+      text-align: center;
+
+      background: var(--primary-clr-one);
+
+      padding: 105px 30px 90px 30px;
+
+      margin: 0 auto;
+
+      border-radius: 15px;
+    }
+  }
+}

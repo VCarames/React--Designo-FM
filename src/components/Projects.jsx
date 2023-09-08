@@ -10,7 +10,7 @@ function Projects() {
           <h3 className="projects-section__subheading secondary-heading">
             Web Design
           </h3>
-          <Link className="projects-section__link link" to="webdesign">
+          <Link className="projects-section__link link" to="/webdesign">
             <span>View Projects</span>
 
             <span>
@@ -22,7 +22,7 @@ function Projects() {
           <h3 className="projects-section__subheading secondary-heading">
             App Design
           </h3>
-          <Link className="projects-section__link link" to="appdesign">
+          <Link className="projects-section__link link" to="/appdesign">
             <span>View Projects</span>
 
             <span>
@@ -34,7 +34,7 @@ function Projects() {
           <h3 className="projects-section__subheading secondary-heading">
             Graphic Design
           </h3>
-          <Link className="projects-section__link link" to="graphicdesign">
+          <Link className="projects-section__link link" to="/graphicdesign">
             <span>View Projects</span>
             <span>
               <img src="/public/assets/icon-right-arrow.svg" alt="" />
