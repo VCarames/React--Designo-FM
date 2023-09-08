@@ -4,7 +4,7 @@
   display: grid;
   justify-items: center;
 
-  margin-top: 2.5rem;
+  margin-top: 7.5rem;
 
   & > {
     transition: var(--transition);
@@ -35,11 +35,11 @@
 
 @media (min-width: 37.5rem) {
   .benefits-section {
-    margin: 3.13rem 2.5rem 2.5rem 2.5rem;
+    margin: 7.44rem 2.5rem 2.5rem 2.5rem;
   }
 
   .benefits-section__list {
-    gap: 5rem;
+    gap: 23px;
   }
 
   .benefits-section__item {
@@ -54,7 +54,7 @@
   }
 
   .benefits-section__icon {
-    margin-bottom: 48px;
+    margin-bottom: 0;
   }
 
   .benefits-section__container {
