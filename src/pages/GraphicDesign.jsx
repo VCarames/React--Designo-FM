@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 import Intro from "../components/Intro";
 
 import GraphicProjects from "../components/graphicDesign/GraphicProjects";
-import ProjectLinks from "../components/ProjectLinks";
+import ProjectLink from "../components/ProjectLink";
 
 function GraphicDesign() {
   return (
@@ -22,7 +22,19 @@ function GraphicDesign() {
 
         <GraphicProjects />
 
-        <ProjectLinks />
+        <section>
+          <h2 className="visually-hidden">Our Previous Projects</h2>
+          <ProjectLink
+            linkClass="project-link--web"
+            heading="Web Design"
+            to="/webdesign"
+          />
+          <ProjectLink
+            linkClass="project-link--app"
+            heading="App Design"
+            to="/appdesign"
+          />
+        </section>
         <CTA />
       </main>
       <Footer />

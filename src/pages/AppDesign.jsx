@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 import Intro from "../components/Intro";
 
 import AppProjects from "../components/appDesign/AppProjects";
-import ProjectLinks from "../components/ProjectLinks";
+import ProjectLink from "../components/ProjectLink";
 
 function AppDesign() {
   return (
@@ -19,7 +19,20 @@ function AppDesign() {
         />
 
         <AppProjects />
-        <ProjectLinks />
+        <section>
+          <h2 className="visually-hidden">Our Previous Projects</h2>
+          <ProjectLink
+            linkClass="project-link--web"
+            heading="Web Design"
+            to="/webdesign"
+          />
+
+          <ProjectLink
+            linkClass="project-link--graphic"
+            heading="Graphic Design"
+            to="/graphicdesign"
+          />
+        </section>
         <CTA />
       </main>
       <Footer />

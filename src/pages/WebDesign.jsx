@@ -4,7 +4,7 @@ import Intro from "../components/Intro";
 import WebProjects from "../components/webDesign/WebProjects";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer/Footer";
-import ProjectLinks from "../components/ProjectLinks";
+import ProjectLink from "../components/ProjectLink";
 
 function WebDesign() {
   return (
@@ -17,7 +17,22 @@ function WebDesign() {
 and bring memorable brand experiences."
         />
         <WebProjects />
-        <ProjectLinks />
+
+        <section className="project-links-section">
+          <h2 className="visually-hidden">Our Previous Projects</h2>
+
+          <ProjectLink
+            linkClass="project-link--app"
+            heading="App Design"
+            to="/appdesign"
+          />
+
+          <ProjectLink
+            linkClass="project-link--graphic"
+            heading="Graphic Design"
+            to="/graphicdesign"
+          />
+        </section>
         <CTA />
       </main>
       <Footer />
