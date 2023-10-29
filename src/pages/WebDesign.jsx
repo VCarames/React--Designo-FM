@@ -18,9 +18,7 @@ and bring memorable brand experiences."
         />
         <WebProjects />
 
-        <section className="project-links-section">
-          <h2 className="visually-hidden">Our Previous Projects</h2>
-
+        <section className="project-link-section">
           <ProjectLink
             linkClass="project-link--app"
             heading="App Design"

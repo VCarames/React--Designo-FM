@@ -13,24 +13,26 @@ function Home() {
       <main>
         <Hero />
 
-        <section>
+        <section className="project-link-section">
           <h2 className="visually-hidden">Our Previous Projects</h2>
-          <ProjectLink
-            linkClass="project-link--web"
-            heading="Web Design"
-            to="/webdesign"
-          />
-          <ProjectLink
-            linkClass="project-link--app"
-            heading="App Design"
-            to="/appdesign"
-          />
+          <div className="project-link-section__content">
+            <ProjectLink
+              linkClass="project-link--web"
+              heading="Web Design"
+              to="/webdesign"
+            />
+            <ProjectLink
+              linkClass="project-link--app"
+              heading="App Design"
+              to="/appdesign"
+            />
 
-          <ProjectLink
-            linkClass="project-link--graphic"
-            heading="Graphic Design"
-            to="/graphicdesign"
-          />
+            <ProjectLink
+              linkClass="project-link--graphic"
+              heading="Graphic Design"
+              to="/graphicdesign"
+            />
+          </div>
         </section>
         <Benefits />
         <CTA />

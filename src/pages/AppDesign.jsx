@@ -19,8 +19,7 @@ function AppDesign() {
         />
 
         <AppProjects />
-        <section>
-          <h2 className="visually-hidden">Our Previous Projects</h2>
+        <section className="project-link-section">
           <ProjectLink
             linkClass="project-link--web"
             heading="Web Design"

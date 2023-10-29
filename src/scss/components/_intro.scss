@@ -1,36 +1,28 @@
 .intro-section {
   margin: 0 auto;
+
   &__content {
     max-width: var(--mw-1100);
 
     display: grid;
     justify-items: center;
-    gap: 24px;
+    gap: 1.5rem;
 
     text-align: center;
 
     background: var(--primary-clr-one);
 
-    padding: 105px 30px 90px 30px;
-  }
-}
+    padding: 6.63rem 1.5rem 6.5rem 1.5rem;
 
-@media (min-width: 600px) {
-  .intro-section {
-    &__content {
-      display: grid;
-      justify-items: center;
-      gap: 24px;
+    @media (min-width: 600px) {
+      padding: 4.06rem 1.88rem 3.94rem 1.88rem;
+      margin: 2.13rem 2.5rem 0 2.44rem;
 
-      text-align: center;
-
-      background: var(--primary-clr-one);
-
-      padding: 105px 30px 90px 30px;
-
-      margin: 0 auto;
-
-      border-radius: 15px;
+      border-radius: 0.94rem;
     }
+  }
+
+  &__text {
+    max-width: 40ch;
   }
 }

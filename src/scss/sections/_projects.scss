@@ -1,8 +1,10 @@
 .projects-section {
-  margin: 5.38rem 1.5rem 0 1.5rem;
+  margin-top: 95px;
 
   &__content {
     max-width: var(--mw-1100);
+
+    padding: 0 24px;
     margin: 0 auto;
   }
 
@@ -14,6 +16,7 @@
   }
 
   &__item {
+    min-height: 314px;
     display: grid;
     grid-template-rows: 20rem 9.88rem;
     justify-items: center;
@@ -35,9 +38,10 @@
 
   &__container {
     display: grid;
+    justify-items: center;
     gap: 1.06rem;
 
-    padding: 2.06rem 2rem 2.88rem 2rem;
+    // padding: 2.06rem 2rem 2.88rem 2rem;
   }
 
   &__subheading {
@@ -47,12 +51,16 @@
 
 @media (min-width: 600px) {
   .projects-section {
-    margin: 7rem 2.5rem 0 2.44rem;
+    margin: 121px 40px 0 39px;
+
+    &__content {
+      padding: 0;
+    }
 
     &__item {
       display: grid;
       justify-items: center;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 49% 51%;
       grid-template-rows: 1fr;
 
       align-items: center;
@@ -61,13 +69,17 @@
     }
 
     &__list {
-      gap: 1.88rem;
+      gap: 30px;
     }
 
     &__container {
-      gap: 1.06rem;
+      gap: 14px;
 
-      padding: 2.13rem 2.88rem 2rem 2.88rem;
+      // padding: 41px 48px 32px 44px;
+    }
+
+    &__text {
+      max-width: 30ch;
     }
   }
 }

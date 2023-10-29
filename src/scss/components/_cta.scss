@@ -1,7 +1,15 @@
 .cta-section {
   position: relative;
 
-  margin: 312px 24px 0 24px;
+  margin: 19.5rem 1.5rem 0 1.5rem;
+
+  @media (min-width: 37.5rem) {
+    margin: 20.69rem 2.44rem 0 2.44rem;
+  }
+
+  @media (min-width: 62.5rem) {
+    margin: 23.81rem 2.44rem 0 2.44rem;
+  }
 
   & > * {
     transition: var(--transition);
@@ -12,7 +20,7 @@
     max-width: var(--mw-1100);
 
     position: absolute;
-    top: -190px;
+    top: -11.88rem;
     left: 50%;
     transform: translateX(-50%);
 
@@ -21,83 +29,69 @@
 
     text-align: center;
 
-    padding: 65px 18px 64px 18px;
+    padding: 4.06rem 1.13rem 4rem 1.13rem;
 
     border-radius: 0.94rem;
     background: var(--primary-clr-one);
+
+    @media (min-width: 37.5rem) {
+      top: -16.44rem;
+      padding: 3.56rem 1.13rem 3.5rem 1.13rem;
+    }
+
+    @media (min-width: 62.5rem) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+
+      top: -13.75rem;
+      text-align: center;
+
+      padding: 4.5rem 5.5rem 2.5rem 5.63rem;
+    }
   }
 
   &__container {
     display: grid;
     justify-items: center;
+
+    @media (min-width: 62.5rem) {
+      justify-items: start;
+      text-align: start;
+    }
   }
 
   &__heading {
     max-width: 12ch;
-    margin-bottom: 15px;
-  }
+    margin-bottom: 0.94rem;
 
-  &__text {
-    max-width: 45ch;
-    margin-bottom: 32px;
-  }
-}
-
-@media (min-width: 600px) {
-  .cta-section {
-    margin: 276px 39px 0 39px;
-
-    &__content {
-      padding: 57px 18px 56px 18px;
+    @media (min-width: 37.5rem) {
+      font-size: var(--fs-40);
+      margin-bottom: 1.06rem;
     }
 
-    &__heading {
+    @media (min-width: 62.5rem) {
       font-size: var(--fs-40);
-      margin-bottom: 17px;
+      margin-bottom: 1.06rem;
     }
 
     &__text {
-      margin-bottom: 31px;
-    }
-  }
-}
+      max-width: 45ch;
+      margin-bottom: 2rem;
 
-@media (min-width: 1000px) {
-  .cta-section {
-    margin: 351px 39px 0 39px;
+      @media (min-width: 37.5rem) {
+        margin-bottom: 1.94rem;
+      }
 
-    &__content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-
-      align-items: center;
-      // align-content: center;
-
-      text-align: center;
-
-      padding: 72px 88px 40px 90px;
-    }
-
-    &__container {
-      justify-items: start;
-      text-align: start;
-    }
-
-    &__heading {
-      font-size: var(--fs-40);
-      margin-bottom: 17px;
-    }
-
-    &__text {
-      max-width: 48ch;
-      margin-bottom: 31px;
+      @media (min-width: 62.5rem) {
+        max-width: 48ch;
+        margin-bottom: 1.94rem;
+      }
     }
 
     &__btn {
       justify-self: end;
 
-      transform: translateY(-17px);
-      // align-self: center;
+      transform: translateY(-1.06rem);
     }
   }
 }

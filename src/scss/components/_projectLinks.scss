@@ -1,133 +1,87 @@
-.project-links-section {
-  max-width: var(--mw-1100);
+.project-link-section {
   margin: 7.44rem 1.5rem 0 1.5rem;
 
-  & > {
-    transition: var(--transition);
-  }
-}
-
-.project-links-section__list {
-  display: grid;
-  grid-template-areas: "web" "app" "graphic";
-  gap: 1.5rem;
-}
-
-.project-links-section__item {
-  text-align: center;
-
-  display: grid;
-  place-content: center;
-  gap: 0.69rem;
-
-  border-radius: 0.94rem;
-}
-
-.project-links-section__item {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.project-links-section__subheading {
-  text-transform: uppercase;
-}
-
-.item--web {
-  grid-area: web;
-  background-image: url(/public/assets/home/mobile/image-web-design.jpg);
-
-  padding: 5.69rem 1.25rem 5.63rem 1.25rem;
-}
-
-.item--app {
-  grid-area: app;
-  background-image: url(/public/assets/home/mobile/image-app-design.jpg);
-
-  padding: 5.69rem 1.25rem 5.56rem 1.25rem;
-}
-
-.item--graphic {
-  grid-area: graphic;
-  background-image: url(/public/assets/home/mobile/image-graphic-design.jpg);
-
-  padding: 5.69rem 1.25rem 5.63rem 20px;
-}
-
-@media (min-width: 37.5rem) {
-  .project-links-section {
+  @media (min-width: 37.5rem) {
     margin: 5.31rem 2.5rem 0 2.44rem;
   }
 
-  .project-links-section__list {
-    gap: 1.5rem;
+  @media (min-width: 62.5rem) {
+    margin: 10.13rem 2.5rem 0 2.44rem;
   }
 
-  .project-links-section__item {
-    text-align: center;
+  &__content {
+    max-width: var(--mw-1100);
 
     display: grid;
-    place-content: center;
-    gap: 1.5rem;
+    grid-template-areas:
+      "web"
+      "app"
+      "graphic";
+    gap: 1.44rem;
 
-    border-radius: 0.94rem;
-  }
+    margin: 0 auto;
 
-  .item--web {
-    background-image: url(/public/assets/home/tablet/image-web-design.jpg);
-
-    padding: 3.31rem 1.25rem 3.31rem 20px;
-  }
-
-  .item--app {
-    background-image: url(/public/assets/home/tablet/image-app-design.jpg);
-
-    padding: 3.38rem 1.25rem 3.25rem 1.25rem;
-  }
-
-  .item--graphic {
-    background-image: url(/public/assets/home/tablet/image-graphic-design.jpg);
-
-    padding: 3.31rem 1.25rem 3.31rem 1.25rem;
+    @media (min-width: 62.5rem) {
+      grid-template-areas:
+        "web app"
+        "web graphic";
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
-@media (min-width: 62.5rem) {
-  .project-links-section {
-    margin: 9.63rem auto 0 auto;
+.project-link {
+  display: grid;
+  place-content: center;
+  gap: 1.38rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 0.94rem;
+  overflow: hidden;
+
+  padding: 5.69rem 1.25rem 5rem 1.25rem;
+
+  @media (min-width: 37.5rem) {
+    padding: 3.38rem 1.25rem 3.44rem 1.25rem;
   }
 
-  .project-links-section__list {
-    grid-template-areas: "web app" "web graphic";
-
-    gap: 1.88rem;
+  @media (min-width: 62.5rem) {
+    padding: 6.5rem 1.38rem 6.94rem 1.38rem;
   }
 
-  .project-links-section__item {
-    text-align: center;
+  &--web {
+    grid-area: web;
+    background-image: url(/public/assets/home/mobile/image-web-design.jpg);
 
-    display: grid;
-    place-content: center;
-    gap: 1.5rem;
-
-    border-radius: 0.94rem;
+    @media (min-width: 37.5rem) {
+      background-image: url(/public/assets/home/desktop/image-web-design.jpg);
+    }
   }
 
-  .item--web {
-    background-image: url(/public/assets/home/desktop/image-web-design.jpg);
+  &--app {
+    grid-area: app;
+    background-image: url(/public/assets/home/mobile/image-app-design.jpg);
 
-    padding: 2.81rem 4.13rem 3.31rem 3.81rem;
+    @media (min-width: 37.5rem) {
+      background-image: url(/public/assets/home/desktop/image-app-design.jpg);
+    }
   }
 
-  .item--app {
-    background-image: url(/public/assets/home/desktop/image-app-design.jpg);
+  &--graphic {
+    grid-area: graphic;
+    background-image: url(/public/assets/home/mobile/image-graphic-design.jpg);
 
-    padding: 6.75rem 1.25rem 6.56rem 1.25rem;
+    margin-bottom: 0;
+
+    @media (min-width: 37.5rem) {
+      background-image: url(/public/assets/home/desktop/image-graphic-design.jpg);
+    }
   }
+}
 
-  .item--graphic {
-    background-image: url(/public/assets/home/desktop/image-graphic-design.jpg);
-
-    padding: 6.75rem 1.25rem 6.5rem 1.25rem;
-  }
+.project-link__subheading {
+  text-transform: uppercase;
 }
