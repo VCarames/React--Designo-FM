@@ -18,7 +18,7 @@ function WebProjects() {
                 alt=""
               />
               <div className="projects-section__container">
-                <h3 className="projects-section__subheading tertiary-heading">
+                <h3 className="projects-section__subheading subheading--secondary">
                   {webProject.heading}
                 </h3>
                 <p className="projects-section__text secondary-text">

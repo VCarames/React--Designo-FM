@@ -5,7 +5,7 @@ function ProjectLink({ linkClass, heading, to }) {
   return (
     <>
       <div className={`project-link ${linkClass}`}>
-        <h3 className="project-link__subheading secondary-heading">
+        <h3 className="project-link__subheading subheading--primary">
           {heading}
         </h3>
         <Link className="project-links__link link" to={to}>
