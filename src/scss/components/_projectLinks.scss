@@ -1,6 +1,10 @@
 .project-link-section {
   margin: 7.44rem 1.5rem 0 1.5rem;
 
+  &--web {
+    margin: 74px 1.5rem 0 1.5rem;
+  }
+
   @media (min-width: 37.5rem) {
     margin: 5.31rem 2.5rem 0 2.44rem;
   }
@@ -26,6 +30,25 @@
         "web app"
         "web graphic";
       grid-template-columns: repeat(2, 1fr);
+
+      &--web,
+      &--app,
+      &--graphic {
+        grid-template-areas: "app graphic";
+        grid-template-columns: repeat(2, 50%);
+      }
+
+      &--web {
+        grid-template-areas: "app graphic";
+      }
+
+      &--app {
+        grid-template-areas: "web graphic";
+      }
+
+      &--graphic {
+        grid-template-areas: "app web";
+      }
     }
   }
 }
@@ -33,7 +56,9 @@
 .project-link {
   display: grid;
   place-content: center;
-  gap: 1.38rem;
+  gap: 12px;
+
+  position: relative;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,8 +105,32 @@
       background-image: url(/public/assets/home/desktop/image-graphic-design.jpg);
     }
   }
-}
 
-.project-link__subheading {
-  text-transform: uppercase;
+  &__subheading {
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    color: var(--primary-clr-three);
+    font-size: var(--fs-15);
+    font-weight: 500;
+    letter-spacing: 0.31rem;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

@@ -20,6 +20,10 @@
     background-image: url(/public/assets/home/desktop/bg-pattern-hero-home.svg);
     background-repeat: no-repeat;
     background-position: -1px 103px;
+
+    @media (min-width: 450px) {
+      padding: 61px 24px 156px 24px;
+    }
   }
 
   &__heading {
@@ -34,12 +38,6 @@
     max-width: 624px;
     position: absolute;
     bottom: -372px;
-  }
-}
-
-@media (min-width: 450px) {
-  .hero-section__content {
-    padding: 61px 24px 156px 24px;
   }
 }
 

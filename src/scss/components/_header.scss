@@ -6,6 +6,10 @@
 
   background: var(--primary-clr-three);
 
+  @media (min-width: 600px) {
+    padding: 4rem 2.44rem 1.88rem 2.44rem;
+  }
+
   &__content {
     max-width: 69.38rem;
 
@@ -18,22 +22,8 @@
 
   &__logo {
     max-width: 12.63rem;
-  }
-}
 
-@media (min-width: 600px) {
-  .header {
-    position: relative;
-    z-index: 99;
-
-    padding: 64px 39px 30px 39px;
-
-    background: var(--primary-clr-three);
-
-    &__content {
-    }
-
-    &__logo {
+    @media (min-width: 600px) {
       max-width: 203px;
     }
   }

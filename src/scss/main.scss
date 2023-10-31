@@ -2,13 +2,9 @@
 @use "base/variables";
 @use "base/typography";
 
-@use "layouts/body";
-@use "layouts/main";
-
 @use "components/header";
 @use "components/navbar";
 @use "components/buttons";
-@use "components/links";
 @use "components/projectLinks";
 
 @use "components/footer";

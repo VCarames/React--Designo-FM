@@ -5,9 +5,16 @@
 
   cursor: pointer;
 
+  @media (min-width: 43.75rem) {
+    all: unset;
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+
   & .nav__toggle-line {
     display: block;
-    width: 24px;
+    width: 1.5rem;
     height: 0.25rem;
 
     background: var(--primary-clr-two);
@@ -18,7 +25,7 @@
   }
 
   &[aria-expanded="true"] .nav__toggle-line:nth-child(1) {
-    transform: translateY(4px) rotate(45deg);
+    transform: translateY(0.25rem) rotate(45deg);
   }
 
   &[aria-expanded="true"] .nav__toggle-line:nth-child(2) {
@@ -26,13 +33,18 @@
   }
 
   &[aria-expanded="true"] .nav__toggle-line:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-0.75rem) rotate(-45deg);
   }
 }
 
 [aria-expanded="false"] + .nav__menu-list {
   transform: translateY(-100%);
   visibility: hidden;
+
+  @media (min-width: 43.75rem) {
+    transform: none;
+    visibility: visible;
+  }
 }
 
 .nav__menu-list {
@@ -40,7 +52,7 @@
   min-height: 15.81rem;
 
   position: absolute;
-  top: 98px;
+  top: 6.13rem;
   left: 0;
   bottom: 0;
   z-index: 4;
@@ -56,10 +68,38 @@
     visibility 0.3s linear;
 
   overflow: auto;
+
+  @media (min-width: 43.75rem) {
+    visibility: visible;
+
+    flex-direction: row;
+    gap: 40px;
+
+    min-height: auto;
+
+    padding: 0;
+
+    position: static;
+
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.nav__menu-link {
+  color: var(--primary-clr-three);
+
+  @media (min-width: 43.75rem) {
+    color: hsla(264, 5%, 20%, 1);
+  }
 }
 
 .disable-scroll {
   overflow: hidden;
+
+  @media (min-width: 43.75rem) {
+    overflow: auto;
+  }
 
   &::before {
     content: "";
@@ -70,50 +110,8 @@
     height: 100%;
     background-color: var(--overlay);
     z-index: 3;
-  }
-}
 
-@media (min-width: 700px) {
-  .nav {
-    position: static;
-    inset-block-start: 1rem;
-    inset-inline-end: 1rem;
-
-    &__menu-list {
-      visibility: visible;
-
-      flex-direction: row;
-      gap: 40px;
-
-      min-height: auto;
-
-      padding: 0;
-
-      position: static;
-
-      background: transparent;
-      box-shadow: none;
-    }
-  }
-
-  [aria-controls="nav__menu-list"] {
-    all: unset;
-    display: none;
-    position: relative;
-    z-index: 1;
-  }
-
-  [aria-expanded="false"] + .nav__menu-list {
-    transform: none;
-    visibility: visible;
-  }
-
-  .disable-scroll {
-    overflow: auto;
-
-    &::before {
-      position: absolute;
-
+    @media (min-width: 43.75rem) {
       background-color: transparent;
     }
   }
