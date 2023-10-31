@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 
 import CTA from "../components/CTA";
 import Footer from "../components/Footer/Footer";
@@ -23,16 +23,19 @@ function GraphicDesign() {
         <GraphicProjects />
 
         <section className="project-link-section">
-          <ProjectLink
-            linkClass="project-link--web"
-            heading="Web Design"
-            to="/webdesign"
-          />
-          <ProjectLink
-            linkClass="project-link--app"
-            heading="App Design"
-            to="/appdesign"
-          />
+          <h2 className="visually-hidden">Our Previous Projects</h2>
+          <div className="project-link-section__content project-link-section__content--graphic">
+            <ProjectLink
+              linkClass="project-link--web"
+              heading="Web Design"
+              to="/webdesign"
+            />
+            <ProjectLink
+              linkClass="project-link--app"
+              heading="App Design"
+              to="/appdesign"
+            />
+          </div>
         </section>
         <CTA />
       </main>

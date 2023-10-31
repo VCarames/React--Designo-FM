@@ -55,7 +55,7 @@ function Navbar() {
         <span className="nav__toggle-line" />
       </button>
       <ul
-        className={`nav__menu-list${isNavExpanded ? " expanded" : ""}`}
+        className={`nav__menu-list ${isNavExpanded ? " expanded" : ""}`}
         id="nav__menu-list"
         role="list"
         ref={navMenuRef}

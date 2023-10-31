@@ -8,7 +8,7 @@ function ProjectLink({ linkClass, heading, to }) {
         <h3 className="project-link__subheading subheading--primary">
           {heading}
         </h3>
-        <Link className="project-links__link link" to={to}>
+        <Link className="project-link__link link" to={to}>
           <span>View Projects</span>
 
           <span>
