@@ -2,7 +2,8 @@
   "locations": [
     {
       "id": 1,
-      "imageSmall": "/assets/locations/tablet/image-map-canada.png",
+      "imageSmall": "/assets/locations/mobile/image-map-canada.png",
+      "imageMedium": "/assets/locations/tablet/image-map-canada.png",
       "imageLarge": "/assets/locations/desktop/image-map-canada.png",
       "location": "Canada",
       "office": "Designo Central Office",
@@ -12,7 +13,8 @@
     },
     {
       "id": 2,
-      "imageSmall": "/assets/locations/tablet/image-map-australia.png",
+      "imageSmall": "/assets/locations/mobile/image-map-australia.png",
+      "imageMedium": "/assets/locations/tablet/image-map-australia.png",
       "imageLarge": "/assets/locations/desktop/image-map-australia.png",
       "location": "Australia",
       "office": "Designo AU Office",
@@ -22,7 +24,8 @@
     },
     {
       "id": 3,
-      "imageSmall": "/assets/locations/tablet/image-map-uk.png",
+      "imageSmall": "/assets/locations/mobile/image-map-uk.png",
+      "imageMedium": "/assets/locations/tablet/image-map-uk.png",
       "imageLarge": "/assets/locations/desktop/image-map-uk.png",
       "location": "United Kingdom",
       "office": "Designo UK Office",
