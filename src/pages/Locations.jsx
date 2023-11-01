@@ -8,7 +8,6 @@ function Locations() {
   return (
     <div>
       <Header />
-      Locations Page
       <main>
         <section className="locations-section">
           <h1 className="visually-hidden">Our Locations</h1>
@@ -17,38 +16,42 @@ function Locations() {
             <ul className="locations-section__list" role="list">
               {locationsData.locations.map((location) => (
                 <li
-                  className="locations-section__list-item"
+                  className={`locations-section__list-item locations-section__list-item--${location.id}`}
                   key={location.id}
                   role="listitem"
                 >
                   <picture className="locations-section__list-picture">
                     <source
-                      media="(min-width: 600px)"
+                      media="(min-width: 1000px)"
                       srcset={location.imageLarge}
+                    />
+                    <source
+                      media="(min-width: 600px)"
+                      srcset={location.imageMedium}
                     />
                     <img src={location.imageSmall} alt="" />
                   </picture>
                   <div className="locations-section__list-content">
-                    <h2 className="locations-section__list-heading">
+                    <h2 className="locations-section__list-heading heading--secondary">
                       {location.location}
                     </h2>
-                    <address className="locations-section__list-container">
-                      <p className="locations-section__list-office">
+                    <address className="locations-section__list-container locations-section__list-container--one">
+                      <h3 className="locations-section__list-subheading text--tertiary">
                         {location.office}
-                      </p>
-                      <p className="locations-section__list-address">
+                      </h3>
+                      <p className="locations-section__list-address text--tertiary">
                         {location.address}
                       </p>
                     </address>
 
-                    <div className="locations-section__list-container">
-                      <h3 className="locations-section__list-subheading">
+                    <div className="locations-section__list-container locations-section__list-container--two">
+                      <h3 className="locations-section__list-subheading text--tertiary">
                         Contact
                       </h3>
-                      <Link className="locations-section__list-phone">
+                      <Link className="locations-section__list-phone text--tertiary">
                         P : {location.phone}
                       </Link>
-                      <Link className="locations-section__list-email">
+                      <Link className="locations-section__list-email text--tertiary">
                         M : {location.email}
                       </Link>
                     </div>
