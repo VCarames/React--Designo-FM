@@ -18,7 +18,7 @@ function LocationLinks() {
                 src={locationLink.icon}
                 alt=""
               />
-              <h3 className="links-section__list-heading">
+              <h3 className="links-section__list-subheading subheading--secondary">
                 {locationLink.heading}
               </h3>
               <Link

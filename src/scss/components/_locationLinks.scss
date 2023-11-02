@@ -1,0 +1,34 @@
+.links-section {
+  margin-top: 1.25rem;
+
+  &__content {
+    max-width: 69.38rem;
+
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: grid;
+    justify-items: center;
+    gap: 3rem;
+
+    text-align: center;
+
+    @media (min-width: 37.5rem) {
+      gap: 5rem;
+    }
+
+    @media (min-width: 62.5rem) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 11.13rem;
+    }
+
+    &-icon {
+      margin-bottom: 3rem;
+    }
+
+    &-subheading {
+      margin-bottom: 2rem;
+    }
+  }
+}
