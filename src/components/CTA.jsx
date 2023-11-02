@@ -13,7 +13,7 @@ function CTA() {
             how our expertise can help your business grow.
           </p>
         </div>
-        <Link className="cta-section__btn btn" to="/contact">
+        <Link className="cta-section__btn button button--primary" to="/contact">
           Get In Touch
         </Link>
       </div>

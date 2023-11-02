@@ -22,7 +22,7 @@ function LocationLinks() {
                 {locationLink.heading}
               </h3>
               <Link
-                className="links-section__list-button btn btn--secondary"
+                className="links-section__list-button button button--secondary"
                 to={locationLink.to}
               >
                 See Location

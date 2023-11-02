@@ -14,7 +14,9 @@ function Intro() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <Link className="hero-section__btn btn">Learn More</Link>
+          <Link className="hero-section__btn button button--primary">
+            Learn More
+          </Link>
         </div>
         <img className="hero-section__img" src={HeroImg} alt="" />
       </div>
