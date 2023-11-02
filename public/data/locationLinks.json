@@ -1,0 +1,22 @@
+{
+  "locationLinks": [
+    {
+      "id": 1,
+      "icon": "/public/assets/shared/desktop/illustration-canada.svg",
+      "heading": "Canada",
+      "to": "/locations"
+    },
+    {
+      "id": 2,
+      "icon": "/public/assets/shared/desktop/illustration-australia.svg",
+      "heading": "Australia",
+      "to": "/locations"
+    },
+    {
+      "id": 3,
+      "icon": "/public/assets/shared/desktop/illustration-united-kingdom.svg",
+      "heading": "United Kingdom",
+      "to": "/locations"
+    }
+  ]
+}
