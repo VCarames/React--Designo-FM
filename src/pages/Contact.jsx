@@ -1,6 +1,6 @@
 import Header from "../components/header/Header";
 import Footer from "../components/Footer/Footer";
-import CTA from "../components/CTA";
+import LocationLinks from "../components/shared/LocationLinks";
 
 function Contact() {
   return (
@@ -8,7 +8,7 @@ function Contact() {
       <Header />
       Contact Us Page
       <main>
-        <CTA />
+        <LocationLinks />
       </main>
       <Footer />
     </div>
