@@ -1,5 +1,13 @@
 .links-section {
-  margin-top: 1.25rem;
+  margin-top: 7.63rem;
+
+  @media (min-width: 37.5rem) {
+    margin-top: 7.56rem;
+  }
+
+  @media (min-width: 62.5rem) {
+    margin-top: 10.13rem;
+  }
 
   &__content {
     max-width: 69.38rem;
@@ -15,20 +23,28 @@
     text-align: center;
 
     @media (min-width: 37.5rem) {
-      gap: 5rem;
+      gap: 4.38rem;
     }
 
     @media (min-width: 62.5rem) {
       grid-template-columns: repeat(3, 1fr);
-      gap: 11.13rem;
+      gap: 5.81rem;
     }
 
     &-icon {
       margin-bottom: 3rem;
+
+      @media (min-width: 37.5rem) {
+        margin-bottom: 3.19rem;
+      }
     }
 
     &-subheading {
       margin-bottom: 2rem;
+
+      @media (min-width: 37.5rem) {
+        margin-bottom: 1.75rem;
+      }
     }
   }
 }

@@ -164,6 +164,7 @@ body {
 @media (min-width: 600px) {
   .heading--secondary {
     font-size: var(--fs-40);
+    list-style: 1.2;
   }
 }
 
@@ -346,20 +347,27 @@ body {
   }
 }
 
-.btn {
+.button {
   min-width: 10ch;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--secondary-clr-two);
   font-size: var(--fs-15);
   font-weight: var(--fw-500);
   letter-spacing: 0.06rem;
   text-transform: uppercase;
-  padding: 18px 19px 16px 19px;
   border-radius: 8px;
+}
+.button--primary {
+  color: var(--secondary-clr-two);
   background: var(--primary-clr-three);
+  padding: 1.13rem 1.19rem 1rem 1.19rem;
+}
+.button--secondary {
+  color: var(--primary-clr-three);
+  background: var(--primary-clr-one);
+  padding: 1.13rem 1.19rem 1rem 1.19rem;
 }
 
 .project-link-section {
@@ -728,6 +736,57 @@ body {
   max-width: 40ch;
 }
 
+.links-section {
+  margin-top: 7.63rem;
+}
+@media (min-width: 37.5rem) {
+  .links-section {
+    margin-top: 7.56rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  .links-section {
+    margin-top: 10.13rem;
+  }
+}
+.links-section__content {
+  max-width: 69.38rem;
+  margin: 0 auto;
+}
+.links-section__list {
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+@media (min-width: 37.5rem) {
+  .links-section__list {
+    gap: 4.38rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  .links-section__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5.81rem;
+  }
+}
+.links-section__list-icon {
+  margin-bottom: 3rem;
+}
+@media (min-width: 37.5rem) {
+  .links-section__list-icon {
+    margin-bottom: 3.19rem;
+  }
+}
+.links-section__list-subheading {
+  margin-bottom: 2rem;
+}
+@media (min-width: 37.5rem) {
+  .links-section__list-subheading {
+    margin-bottom: 1.75rem;
+  }
+}
+
 .hero-section {
   text-align: center;
   overflow: hidden;
@@ -1019,6 +1078,121 @@ body {
     max-width: 30ch;
   }
 }
+.about-section--two {
+  margin: 7.38rem 0 0 0;
+}
+@media (min-width: 37.5rem) {
+  .about-section {
+    margin: 2.56rem 2.5rem 0 2.44rem;
+  }
+  .about-section--one {
+    margin: 7.5rem 2.5rem 0 2.44rem;
+  }
+  .about-section--two {
+    margin: 7.44rem 2.5rem 0 2.44rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  .about-section {
+    margin: 2.13rem 2.5rem 0 2.44rem;
+  }
+  .about-section--one {
+    margin: 10rem 2.5rem 0 2.44rem;
+  }
+  .about-section--two {
+    margin: 10rem 2.5rem 0 2.44rem;
+  }
+}
+.about-section__content {
+  max-width: 69.38rem;
+  margin: 0 auto;
+}
+@media (min-width: 37.5rem) {
+  .about-section__content {
+    border-radius: 0.94rem;
+    overflow: hidden;
+  }
+}
+@media (min-width: 62.5rem) {
+  .about-section__content {
+    display: grid;
+    grid-template-areas: "picture text";
+    grid-template-columns: 1fr 29.69rem;
+  }
+  .about-section__content--one {
+    grid-template-areas: "text picture";
+    grid-template-columns: 29.69rem 1fr;
+  }
+  .about-section__content--two {
+    grid-template-areas: "picture text";
+    grid-template-columns: 1fr 29.69rem;
+  }
+}
+.about-section__picture {
+  display: picture;
+}
+.about-section__container {
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 5rem 1.5rem 5rem 1.5rem;
+  background: var(--primary-clr-one);
+}
+.about-section__container--two {
+  padding: 5rem 1.5rem 6.63rem 1.5rem;
+}
+@media (min-width: 37.5rem) {
+  .about-section__container {
+    gap: 2rem;
+    padding: 4.13rem 3.63rem 3.88rem 3.63rem;
+  }
+  .about-section__container--one, .about-section__container--two {
+    gap: 1.63rem;
+  }
+  .about-section__container--one {
+    padding: 4.44rem 3.63rem 4.13rem 3.63rem;
+  }
+  .about-section__container--two {
+    padding: 4.44rem 3.63rem 5.88rem 3.63rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  .about-section__container {
+    grid-area: picture;
+    justify-items: start;
+    place-content: start;
+    text-align: start;
+    padding: 8.5rem 1rem 8.38rem 6.06rem;
+  }
+  .about-section__container--one {
+    padding: 9.88rem 4.88rem 5rem 6rem;
+  }
+  .about-section__container--two {
+    padding: 9.75rem 3.63rem 5.88rem 6rem;
+  }
+}
+.about-section__picture img {
+  width: 100%;
+  height: 100%;
+}
+.about-section__heading, .about-section__text {
+  color: var(--primary-clr-three);
+}
+.about-section__text {
+  max-width: 50ch;
+}
+@media (min-width: 37.5rem) {
+  .about-section__text {
+    max-width: 60ch;
+  }
+}
+@media (min-width: 62.5rem) {
+  .about-section__text {
+    max-width: 48ch;
+  }
+}
+
 @media (min-width: 37.5rem) {
   .locations-section {
     padding: 0 2.5rem 0 2.44rem;
