@@ -17,6 +17,7 @@ function Locations() {
               {locationsData.locations.map((location) => (
                 <li
                   className={`locations-section__list-item locations-section__list-item--${location.id}`}
+                  id={`locations-section__list-item--${location.id}`}
                   key={location.id}
                   role="listitem"
                 >
