@@ -1,13 +1,14 @@
 import Header from "../components/header/Header";
 import Footer from "../components/Footer/Footer";
 import LocationLinks from "../components/shared/LocationLinks";
+import ContactUs from "../components/forms/ContactUs";
 
 function Contact() {
   return (
     <div>
       <Header />
-      Contact Us Page
       <main>
+        <ContactUs />
         <LocationLinks />
       </main>
       <Footer />
