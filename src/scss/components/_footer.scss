@@ -171,4 +171,15 @@
       align-self: end;
     }
   }
+
+  &__social-link svg {
+    fill: var(--primary-clr-one);
+
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        fill: var(--secondary-clr-one);
+        transition: var(--transition);
+      }
+    }
+  }
 }

@@ -692,6 +692,15 @@ body {
     align-self: end;
   }
 }
+.footer__social-link svg {
+  fill: var(--primary-clr-one);
+}
+@media (hover: hover) {
+  .footer__social-link svg:is(:hover, :focus, :focus-visible) {
+    fill: var(--secondary-clr-one);
+    transition: var(--transition);
+  }
+}
 
 .cta-section {
   position: relative;
