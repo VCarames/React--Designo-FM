@@ -10,13 +10,13 @@ function AboutCard(props) {
           <img src={props.smallImageSrc} alt="" />
         </picture>
         <div className={`about-section__container ${props.containerClass}`}>
-          <h2 className="about-section__heading heading--secondary">
+          <h2 className="about-section__heading about-section__heading--alt heading--secondary">
             {props.heading}
           </h2>
-          <p className="about-section__text about-section__text--one text--primary">
+          <p className="about-section__text about-section__text--one about-section__text--alt text--primary">
             {props.textOne}
           </p>
-          <p className="about-section__text about-section__text--two text--primary">
+          <p className="about-section__text about-section__text--two about-section__text--alt text--primary">
             {props.textTwo}
           </p>
         </div>

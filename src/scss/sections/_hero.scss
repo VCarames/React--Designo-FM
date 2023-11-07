@@ -11,48 +11,50 @@
 
     grid-template-rows: repeat(2, 1fr);
 
+    color: var(--primary-clr-three);
+
     background: var(--primary-clr-one);
 
-    padding: 81px 24px 139px 24px;
+    padding: 5.06rem 1.5rem 8.69rem 1.5rem;
 
     transition: 0.8s all;
 
     background-image: url(/public/assets/home/desktop/bg-pattern-hero-home.svg);
     background-repeat: no-repeat;
-    background-position: -1px 103px;
+    background-position: -0.06rem 6.44rem;
 
-    @media (min-width: 450px) {
-      padding: 61px 24px 156px 24px;
+    @media (min-width: 28.13rem) {
+      padding: 3.81rem 1.5rem 9.75rem 1.5rem;
     }
   }
 
   &__heading {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 
   &__text {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 
   &__img {
-    max-width: 624px;
+    max-width: 39rem;
     position: absolute;
-    bottom: -372px;
+    bottom: -23.25rem;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .hero-section {
     &__content {
-      border-radius: 20px;
+      border-radius: 1.25rem;
       overflow: hidden;
 
       justify-items: center;
 
-      padding: 61px 58px 132px 58px;
-      margin: 34px 40px;
+      padding: 3.81rem 3.63rem 8.25rem 3.63rem;
+      margin: 2.13rem 2.5rem;
 
-      background-position: 169px 101px;
+      background-position: 10.56rem 6.31rem;
     }
 
     &__container {
@@ -61,33 +63,33 @@
     }
 
     &__heading {
-      margin-bottom: 29px;
+      margin-bottom: 1.81rem;
     }
 
     &__text {
       max-width: 46ch;
 
-      margin-bottom: 18px;
+      margin-bottom: 1.13rem;
     }
 
     &__img {
-      bottom: -355px;
+      bottom: -22.19rem;
     }
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .hero-section {
-    margin-top: 33px;
+    margin-top: 2.06rem;
     &__content {
-      grid-template-columns: 1fr 388px;
+      grid-template-columns: 1fr 24.25rem;
       grid-template-rows: 1fr;
       align-items: center;
 
-      padding: 147px 58px 144px 90px;
+      padding: 9.19rem 3.63rem 9rem 5.63rem;
       margin: 0 auto;
 
-      background-position: 466px 0;
+      background-position: 29.13rem 0;
     }
 
     &__container {
@@ -99,16 +101,16 @@
     }
 
     &__heading {
-      margin-bottom: 31px;
+      margin-bottom: 1.94rem;
     }
 
     &__text {
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
 
     &__img {
-      right: -80px;
-      bottom: -241px;
+      right: -5rem;
+      bottom: -15.06rem;
     }
   }
 }

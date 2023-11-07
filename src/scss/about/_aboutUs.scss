@@ -67,6 +67,18 @@
     padding: 5rem 1.5rem 5rem 1.5rem;
 
     background: var(--primary-clr-one);
+    background-image: url(/public/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: -31.31rem -8.75rem;
+
+    &--one,
+    &--two {
+      background: #fdf3f0;
+
+      background-image: url(/public/assets/shared/desktop/bg-pattern-three-circles.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
 
     &--two {
       padding: 5rem 1.5rem 6.63rem 1.5rem;
@@ -74,11 +86,17 @@
 
     @media (min-width: 37.5rem) {
       gap: 2rem;
+
+      background-image: url(/public/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+      background-position: -7.56rem -26.88rem;
+
       padding: 4.13rem 3.63rem 3.88rem 3.63rem;
 
       &--one,
       &--two {
         gap: 1.63rem;
+        background-image: url(/public/assets/shared/desktop/bg-pattern-three-circles.svg);
+        background-position: 5.81rem -13.25rem;
       }
 
       &--one {
@@ -97,13 +115,22 @@
 
       text-align: start;
 
+      background-position: 0 -10rem;
+
       padding: 8.5rem 1rem 8.38rem 6.06rem;
 
+      &--one,
+      &--two {
+        background-image: url(/public/assets/shared/desktop/bg-pattern-two-circles.svg);
+      }
+
       &--one {
+        background-position: -9.06rem 21.75rem;
         padding: 9.88rem 4.88rem 5rem 6rem;
       }
 
       &--two {
+        background-position: 0.13rem 21.75rem;
         padding: 9.75rem 3.63rem 5.88rem 6rem;
       }
     }
@@ -119,8 +146,16 @@
     color: var(--primary-clr-three);
   }
 
+  &__heading--alt {
+    color: #e7816b;
+  }
+
   &__text {
     max-width: 50ch;
+
+    &--alt {
+      color: #333136;
+    }
 
     @media (min-width: 37.5rem) {
       max-width: 60ch;

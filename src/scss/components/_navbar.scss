@@ -73,7 +73,7 @@
     visibility: visible;
 
     flex-direction: row;
-    gap: 40px;
+    gap: 2.5rem;
 
     min-height: auto;
 
@@ -88,9 +88,28 @@
 
 .nav__menu-link {
   color: var(--primary-clr-three);
+  outline: none;
+  position: relative;
 
   @media (min-width: 43.75rem) {
     color: hsla(264, 5%, 20%, 1);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+    width: 0;
+    height: 0.13rem;
+    background: var(--secondary-clr-two);
+    transition: width 0.4s ease-out;
+  }
+
+  @media (hover: hover) {
+    &:is(:hover, :focus, :focus-visible)::before {
+      width: 100%;
+    }
   }
 }
 

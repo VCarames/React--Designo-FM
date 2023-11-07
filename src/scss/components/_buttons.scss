@@ -1,6 +1,6 @@
 .button {
   min-width: 10ch;
-  min-height: 44px;
+  min-height: 2.75rem;
 
   display: inline-flex;
   align-items: center;
@@ -11,13 +11,22 @@
   letter-spacing: 0.06rem;
   text-transform: uppercase;
 
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   &--primary {
     color: var(--secondary-clr-two);
     background: var(--primary-clr-three);
 
     padding: 1.13rem 1.19rem 1rem 1.19rem;
+
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        color: var(--primary-clr-three);
+        background: var(--secondary-clr-one);
+
+        transition: var(--transition);
+      }
+    }
   }
 
   &--secondary {
@@ -25,5 +34,13 @@
     background: var(--primary-clr-one);
 
     padding: 1.13rem 1.19rem 1rem 1.19rem;
+
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible) {
+        background: var(--secondary-clr-one);
+
+        transition: var(--transition);
+      }
+    }
   }
 }

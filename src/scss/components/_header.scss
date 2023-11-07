@@ -6,7 +6,7 @@
 
   background: var(--primary-clr-three);
 
-  @media (min-width: 600px) {
+  @media (min-width: 37.5rem) {
     padding: 4rem 2.44rem 1.88rem 2.44rem;
   }
 
@@ -23,8 +23,8 @@
   &__logo {
     max-width: 12.63rem;
 
-    @media (min-width: 600px) {
-      max-width: 203px;
+    @media (min-width: 37.5rem) {
+      max-width: 12.69rem;
     }
   }
 }

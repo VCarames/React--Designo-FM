@@ -2,7 +2,7 @@
   margin: 7.44rem 1.5rem 0 1.5rem;
 
   &--web {
-    margin: 74px 1.5rem 0 1.5rem;
+    margin: 4.63rem 1.5rem 0 1.5rem;
   }
 
   @media (min-width: 37.5rem) {
@@ -56,13 +56,15 @@
 .project-link {
   display: grid;
   place-content: center;
-  gap: 12px;
+  gap: 1.44rem;
 
   position: relative;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  color: var(--primary-clr-three);
 
   border-radius: 0.94rem;
   overflow: hidden;
@@ -108,6 +110,7 @@
 
   &__subheading {
     text-transform: uppercase;
+    z-index: 3;
   }
 
   &__link {
@@ -115,13 +118,13 @@
     align-items: center;
     justify-content: center;
 
-    gap: 16px;
+    gap: 1rem;
 
-    color: var(--primary-clr-three);
     font-size: var(--fs-15);
     font-weight: 500;
     letter-spacing: 0.31rem;
     text-transform: uppercase;
+    z-index: 2;
 
     &::before {
       content: "";
@@ -131,6 +134,34 @@
       left: 0;
       width: 100%;
       height: 100%;
+    }
+
+    &:after {
+      position: absolute;
+
+      content: "";
+      background: linear-gradient(
+        0deg,
+        hsla(0, 0%, 0%, 0.6) 0%,
+        hsla(0, 0%, 0%, 0.6) 100%
+      );
+
+      width: 100%;
+      height: 100%;
+
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      z-index: -1;
+    }
+
+    @media (hover: hover) {
+      &:is(:hover, :focus, :focus-visible):after {
+        background: hsla(11, 72%, 66%, 0.6);
+
+        transition: var(--transition);
+      }
     }
   }
 }
