@@ -14,49 +14,52 @@ function ContactUs() {
           </p>
         </div>
         <form className="contact-section__form" noValidate>
-          <label className="visually-hidden" htmlFor="name">
-            Name
-          </label>
-          <input
-            className="contact-section__form-input"
-            type="text"
-            name="name"
-            id=""
-            placeholder="Name"
-          />
+          <fieldset className="contact-section__form-fieldset">
+            <label className="visually-hidden" htmlFor="name">
+              Name
+            </label>
+            <input
+              className="contact-section__form-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
 
-          <label className="visually-hidden" htmlFor="email">
-            Email Address
-          </label>
-          <input
-            className="contact-section__form-input"
-            type="email"
-            name="email"
-            id=""
-            placeholder="Email Address"
-          />
+            <label className="visually-hidden" htmlFor="email">
+              Email Address
+            </label>
+            <input
+              className="contact-section__form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
 
-          <label className="visually-hidden" htmlFor="phone">
-            Phone
-          </label>
-          <input
-            className="contact-section__form-input"
-            type="tel"
-            name="phone"
-            id=""
-            placeholder="Phone"
-          />
+            <label className="visually-hidden" htmlFor="phone">
+              Phone
+            </label>
+            <input
+              className="contact-section__form-input"
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="Phone"
+            />
 
-          <label className="visually-hidden" htmlFor="message">
-            Your Message
-          </label>
-          <input
-            className="contact-section__form-input"
-            type="text"
-            name="message"
-            id=""
-            placeholder="Your Message"
-          />
+            <label className="visually-hidden" htmlFor="message">
+              Your Message
+            </label>
+            <input
+              className="contact-section__form-input contact-section__form-input--message"
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Your Message"
+            />
+          </fieldset>
 
           <button
             className="contact-section__form-button button button--primary"
