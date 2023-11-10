@@ -26,6 +26,29 @@
     @media (min-width: 28.13rem) {
       padding: 3.81rem 1.5rem 9.75rem 1.5rem;
     }
+
+    @media (min-width: 37.5rem) {
+      border-radius: 1.25rem;
+      overflow: hidden;
+
+      justify-items: center;
+
+      padding: 3.81rem 3.63rem 8.25rem 3.63rem;
+      margin: 2.13rem 2.5rem;
+
+      background-position: 10.56rem 6.31rem;
+    }
+
+    @media (min-width: 62.5rem) {
+      grid-template-columns: 1fr 24.25rem;
+      grid-template-rows: 1fr;
+      align-items: center;
+
+      padding: 9.19rem 3.63rem 9rem 6rem;
+      margin: 0 auto;
+
+      background-position: 29.13rem 0;
+    }
   }
 
   &__heading {
@@ -45,18 +68,6 @@
 
 @media (min-width: 37.5rem) {
   .hero-section {
-    &__content {
-      border-radius: 1.25rem;
-      overflow: hidden;
-
-      justify-items: center;
-
-      padding: 3.81rem 3.63rem 8.25rem 3.63rem;
-      margin: 2.13rem 2.5rem;
-
-      background-position: 10.56rem 6.31rem;
-    }
-
     &__container {
       display: grid;
       justify-items: center;
@@ -81,16 +92,6 @@
 @media (min-width: 62.5rem) {
   .hero-section {
     margin-top: 2.06rem;
-    &__content {
-      grid-template-columns: 1fr 24.25rem;
-      grid-template-rows: 1fr;
-      align-items: center;
-
-      padding: 9.19rem 3.63rem 9rem 5.63rem;
-      margin: 0 auto;
-
-      background-position: 29.13rem 0;
-    }
 
     &__container {
       text-align: start;

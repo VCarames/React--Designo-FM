@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-function CTA() {
+function CTA(props) {
   return (
-    <section className="cta-section">
+    <section className={`cta-section ${props.sectionClass}`}>
       <div className="cta-section__content">
         <div className="cta-section__container">
           <h2 className="cta-section__heading heading--primary ">

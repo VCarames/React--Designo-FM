@@ -4,9 +4,9 @@ import FooterNav from "./FooterNav";
 import FooterContact from "./FooterContact";
 import FooterSocial from "./FooterSocial";
 
-function Footer() {
+function Footer(props) {
   return (
-    <footer className="footer">
+    <footer className={`footer ${props.footerClass}`}>
       <div className="footer__content">
         <div className="footer__container--one">
           <Link to="/" className="footer__logo" aria-label="Designo - Home">

@@ -1,14 +1,38 @@
 .cta-section {
   position: relative;
 
-  margin: 19.5rem 1.5rem 0 1.5rem;
+  margin: 19.31rem 1.5rem 0 1.5rem;
+
+  &--web {
+    margin: 17.75rem 1.5rem 0 1.5rem;
+  }
+
+  &--app {
+    margin: 14.94rem 1.5rem 0 1.5rem;
+  }
 
   @media (min-width: 37.5rem) {
     margin: 20.63rem 2.44rem 0 2.44rem;
+
+    &--web {
+      margin: 25.13rem 2.44rem 0 2.44rem;
+    }
+
+    &--app {
+      margin: 25.13rem 2.44rem 0 2.44rem;
+    }
   }
 
   @media (min-width: 62.5rem) {
     margin: 23.81rem 2.44rem 0 2.44rem;
+
+    &--web {
+      margin: 23.81rem 2.44rem 0 2.44rem;
+    }
+
+    &--app {
+      margin: 23.56rem 2.44rem 0 2.44rem;
+    }
   }
 
   & > * {
@@ -20,7 +44,7 @@
     max-width: var(--mw-1100);
 
     position: absolute;
-    top: -12rem;
+    top: -11.88rem;
     left: 50%;
     transform: translateX(-50%);
 

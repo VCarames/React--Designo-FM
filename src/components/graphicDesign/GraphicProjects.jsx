@@ -18,10 +18,12 @@ function GraphicProjects() {
                 alt=""
               />
               <div className="projects-section__container">
-                <h3 className="projects-section__subheading">
+                <h3 className="projects-section__subheading subheading--secondary ">
                   {graphicProject.heading}
                 </h3>
-                <p className="projects-section__text">{graphicProject.text}</p>
+                <p className="projects-section__text text--secondary">
+                  {graphicProject.text}
+                </p>
               </div>
             </li>
           ))}

@@ -1,14 +1,29 @@
 .footer {
   background: var(--primary-clr-two);
 
-  padding: 15.75rem 2.5rem 4rem 2.5rem;
+  padding: 15.81rem 2.5rem 4rem 2.5rem;
+
+  &--contact {
+    padding: 4.06rem 2.5rem 4rem 2.5rem;
+    margin-top: 7.19rem;
+  }
 
   @media (min-width: 37.5rem) {
     padding: 10.44rem 2.5rem 4.94rem 2.5rem;
+
+    &--contact {
+      padding: 5.06rem 2.5rem 5rem 2.5rem;
+      margin-top: 7.31rem;
+    }
   }
 
   @media (min-width: 62.5rem) {
     padding: 8.94rem 2.5rem 4.88rem 2.5rem;
+
+    &--contact {
+      padding: 4.56rem 2.5rem 4.44rem 2.5rem;
+      margin-top: 9.88rem;
+    }
   }
 
   &__content {
@@ -31,7 +46,7 @@
   }
 
   &__container--one {
-    gap: 3.69rem;
+    gap: 3.81rem;
 
     @media (min-width: 37.5rem) {
       grid-template-columns: 1fr 1.5fr;

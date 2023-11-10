@@ -34,7 +34,7 @@ and bring memorable brand experiences."
             />
           </div>
         </section>
-        <CTA />
+        <CTA sectionClass="cta-section--web" />
       </main>
       <Footer />
     </div>

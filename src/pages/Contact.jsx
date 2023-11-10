@@ -11,7 +11,7 @@ function Contact() {
         <ContactUs />
         <LocationLinks />
       </main>
-      <Footer />
+      <Footer footerClass="footer--contact" />
     </div>
   );
 }

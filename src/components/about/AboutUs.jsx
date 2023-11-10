@@ -4,11 +4,11 @@ function AboutUs() {
       <div className="about-section__content">
         <picture className="about-section__picture">
           <source
-            media="(min-width: 1000px)"
+            media="(min-width: 62.5rem)"
             srcSet="/public/assets/about/desktop/image-about-hero.jpg"
           />
           <source
-            media="(min-width: 600px)"
+            media="(min-width: 37.5rem)"
             srcSet="/public/assets/about/tablet/image-about-hero.jpg"
           />
           <img src="/public/assets/about/mobile/image-about-hero.jpg" alt="" />

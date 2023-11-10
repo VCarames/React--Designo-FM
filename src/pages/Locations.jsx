@@ -23,11 +23,11 @@ function Locations() {
                 >
                   <picture className="locations-section__list-picture">
                     <source
-                      media="(min-width: 1000px)"
+                      media="(min-width: 62.5rem)"
                       srcset={location.imageLarge}
                     />
                     <source
-                      media="(min-width: 600px)"
+                      media="(min-width: 37.5rem)"
                       srcset={location.imageMedium}
                     />
                     <img src={location.imageSmall} alt="" />

@@ -75,50 +75,67 @@ function ContactUs() {
               Name
             </label>
             <input
-              className="contact-section__form-input"
+              className="contact-section__form-input contact-section__form-input--name"
               type="text"
               name="name"
               id="name"
-              aria-describedby="email-error"
+              aria-describedby="error--name"
               placeholder="Name"
               value={formData.name}
               onChange={handleInputChange}
             />
             {errors.name && (
-              <p className="contact-section__form-error">{errors.name}</p>
+              <p
+                className="contact-section__form-error contact-section__form-error--name"
+                id="error--name"
+              >
+                {errors.name}
+              </p>
             )}
 
             <label className="visually-hidden" htmlFor="email">
               Email Address
             </label>
             <input
-              className="contact-section__form-input"
+              className="contact-section__form-input contact-section__form-input--email"
               type="email"
               name="email"
               id="email"
+              aria-describedby="error--email"
               placeholder="Email Address"
               value={formData.email}
               onChange={handleInputChange}
             />
             {errors.email && (
-              <p className="contact-section__form-error">{errors.email}</p>
+              <p
+                className="contact-section__form-error contact-section__form-error--email"
+                id="error--email"
+              >
+                {errors.email}
+              </p>
             )}
 
             <label className="visually-hidden" htmlFor="phone">
               Phone
             </label>
             <input
-              className="contact-section__form-input"
+              className="contact-section__form-input contact-section__form-input--phone"
               type="tel"
               name="phone"
               id="phone"
+              aria-describedby="error--phone"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               placeholder="Phone"
               value={formData.phone}
               onChange={handleInputChange}
             />
             {errors.phone && (
-              <p className="contact-section__form-error">{errors.phone}</p>
+              <p
+                className="contact-section__form-error contact-section__form-error--phone"
+                id="error--phone"
+              >
+                {errors.phone}
+              </p>
             )}
 
             <label className="visually-hidden" htmlFor="message">
@@ -129,12 +146,18 @@ function ContactUs() {
               type="text"
               name="message"
               id="message"
+              aria-describedby="error--message"
               placeholder="Your Message"
               value={formData.message}
               onChange={handleInputChange}
             />
             {errors.message && (
-              <p className="contact-section__form-error">{errors.message}</p>
+              <p
+                className="contact-section__form-error contact-section__form-error--message"
+                id="error--message"
+              >
+                {errors.message}
+              </p>
             )}
           </fieldset>
 

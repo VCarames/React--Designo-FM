@@ -1,15 +1,14 @@
 [aria-controls="nav__menu-list"] {
-  z-index: 7;
-  all: unset;
-  display: inline-block;
+  display: grid;
+  gap: 4px;
+  background: transparent;
 
   cursor: pointer;
 
+  z-index: 7;
+
   @media (min-width: 43.75rem) {
-    all: unset;
     display: none;
-    position: relative;
-    z-index: 1;
   }
 
   & .nav__toggle-line {
@@ -18,7 +17,7 @@
     height: 0.25rem;
 
     background: var(--primary-clr-two);
-    margin-block: 0.25rem;
+
     border-radius: 0.25rem;
 
     transition: transform 0.5s, opacity 0.25s;

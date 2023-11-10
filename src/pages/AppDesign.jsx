@@ -35,7 +35,7 @@ function AppDesign() {
             />
           </div>
         </section>
-        <CTA />
+        <CTA sectionClass="cta-section--app" />
       </main>
       <Footer />
     </div>

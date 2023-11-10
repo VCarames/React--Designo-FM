@@ -18,10 +18,12 @@ function AppProjects() {
                 alt=""
               />
               <div className="projects-section__container">
-                <h3 className="projects-section__subheading">
+                <h3 className="projects-section__subheading subheading--secondary">
                   {appProject.heading}
                 </h3>
-                <p className="projects-section__text">{appProject.text}</p>
+                <p className="projects-section__text text--secondary">
+                  {appProject.text}
+                </p>
               </div>
             </li>
           ))}
